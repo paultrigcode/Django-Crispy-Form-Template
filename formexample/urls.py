@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from exampform import views
+from exampmodelform import views as piews
 from django.views.generic import RedirectView
 
 
@@ -28,5 +29,7 @@ urlpatterns = [
     path('form/4/', views.CrispyAddressFormView.as_view(), name='form_4'),
     path('form/5/', views.CustomFieldFormView.as_view(),name ='form_5'),
     path('success/', views.SuccessView.as_view(), name='success'),
+    path('form/6/', piews.CrispyPostFormView.as_view(), name='form_6'),
+
 
 ]
