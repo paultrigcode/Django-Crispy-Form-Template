@@ -30,6 +30,10 @@ urlpatterns = [
     path('form/5/', views.CustomFieldFormView.as_view(),name ='form_5'),
     path('success/', views.SuccessView.as_view(), name='success'),
     path('form/6/', piews.CrispyPostFormView.as_view(), name='form_6'),
+    path('form/7/', piews.CrispyPostFormView2.as_view(), name='form_7'),
+    path('form/8/', piews.frontform,name='form_8'),
+
+
 
 
 ]

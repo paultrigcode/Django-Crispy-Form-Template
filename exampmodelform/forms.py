@@ -17,8 +17,8 @@ class CrispyPostForm(ArticleForm):
         self.helper = FormHelper()
         self.helper.layout = Layout(
             Row(
-                Column('title', css_class='form-group col-md-6 mb-0'),
-                Column('description', css_class='form-group col-md-6 mb-0'),
+                Column('title', css_class='form-group col-xs-3 mb-0'),
+                Column('description', css_class='form-group col-xs-3 mb-0'),
                 css_class='form-row'
             ),
             Submit('submit','Submit'))

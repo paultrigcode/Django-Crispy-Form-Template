@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
   <title>{% block title %}My Site{% endblock %}</title>
   <style type="text/css">
     .asteriskField {
       display: none;
     }
+/*    .input {max-width: 2em};
+*/
   </style>
 </head>
 <body>
@@ -31,6 +35,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link{% if request.path == '/form/6/' %} active{% endif %}" href="{% url 'form_6' %}">Custom Model Form Field</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link{% if request.path == '/form/7/' %} active{% endif %}" href="{% url 'form_7' %}">Custom Model Form Field 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link{% if request.path == '/form/8/' %} active{% endif %}" href="{% url 'form_8' %}">Custom Model Form Field 8</a>
       </li>
     </ul>
   </div>
